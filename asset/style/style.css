@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Press+Start+2P&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url(../src/ladang.jpg);
+  height: 100vh;
+  background-size: 110%;
+}
+
+section{
+  text-align: center;
+}
+
+h1{
+  font-family: 'Bungee Shade', sans-serif;
+  font-size: 3rem;
+}
+
+.papan{
+  font-size: 3rem;
+  margin-top: 4rem;
+  position: block;
+}
+
+.papan h2{
+  font-family: 'Bungee Shade', sans-serif;
+  font-size: 2.7rem;
+  padding-bottom: 1rem;
+}
+
+.papan p{
+  padding-top: 1rem;
+  font-size: 2rem;
+  font-family: "Press Start 2P", system-ui;
+}
+
+button {
+  display: block;
+  margin: auto;
+  padding: .7rem 2rem;
+  border-radius: 10px;
+  font-family: "Press Start 2P", system-ui;
+  background: none;
+}
+
+button:hover{
+  cursor: pointer;
+  background: #fffefe85;
+}
+
+.container {
+  width: 600px;
+  margin: auto;
+  cursor: url(../src/palu1.png), auto;
+}
+
+.container:active {
+  cursor: url(../src/palu2.png), auto;
+}
+
+.tanah {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+  float: left;
+}
+
+.tanah::after {
+  content: "";
+  display: block;
+  width: 200px;
+  height: 100px;
+  background: url(../src/tanah.png) bottom center no-repeat;
+  background-size: 80%;
+  position: absolute;
+  bottom: -25px;
+}
+
+.tikus {
+  width: 100%;
+  height: 100%;
+  background: url(../src/leo.png) bottom center no-repeat;
+  background-size: 60%;
+  position: absolute;
+  top: 100px;
+  transition: top 0.3s;
+}
+
+.tanah.muncul .tikus {
+  top: -3px;
+}

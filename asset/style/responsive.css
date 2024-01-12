@@ -1,0 +1,44 @@
+@media screen and (max-width: 640px) {
+  body {
+    background: url(../src/ladang.jpg) center;
+    background-size: cover;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .papan h2 {
+    font-size: 2.5rem;
+  }
+
+  .papan p {
+    font-size: 1rem;
+  }
+
+  button {
+    padding: 0.5rem 1.4rem;
+  }
+
+  .container {
+    width: 450px;
+  }
+  
+  .container:active{
+    cursor: url(../src/palu1.png);
+  }
+
+  .tanah {
+    width: 150px;
+    height: 150px;
+    right: 1.2rem;
+  }
+
+  .tanah.muncul .tikus {
+  top: -14px;
+}
+
+  .tikus {
+    left: 1.3rem;
+  }
+}
